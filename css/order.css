@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'UTM Davida';
+    src: url('../fonts/UTM-Davida.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.container{
+    position: relative;
+}
+.chooseBox{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding:30px 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.groupIn{
+    display: flex;
+    align-items: center;
+}
+.chooseBox input{
+    margin-right: 10px;
+    width: 20px;
+    height: 30px;
+}
+.gap{
+    width: 100%;
+    height: 200px;
+}
+.lblAll{
+    font-size: 36px;
+    font-weight: 600;
+}
+.sumlbl{
+    font-size: 36px;
+    font-weight: 600;
+}
+.btnCoun{
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: var(--dark-blue);
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: 3px solid var(--dark-blue);
+}
+.boxSelection{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.boxSelection::-webkit-scrollbar-track{
+    background: var(--dark-blue) !important; /* Màu nền */
+    border-radius: 5px;
+}
+/* Kích thước thanh cuộn */
+.boxSelection::-webkit-scrollbar {
+    width: 10px;
+}
+
+.boxSelection::-webkit-scrollbar-track {
+    background: var(--dark-blue) !important;
+    border-radius: 5px;
+    border: 2px solid var(--primary-color)
+}
+
+/* Màu thanh trượt */
+.boxSelection::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Hover vào thanh trượt */
+.boxSelection::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+.groupBox{
+    width: 45%;
+}
+
+.headerTitle{
+    font-size: 96px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+span{
+    display: inline-block;
+}
+.namePro{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+.textSame{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.boxDetails{
+    display: flex;
+    flex-direction: column;
+}
+.groupBox .item img{
+    width: 50%;
+    height: auto;
+}
+.groupBox .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.custom-checkbox {
+    appearance: none; /* Ẩn checkbox mặc định */
+    width: 40px;
+    height: 25px;
+    border: 2px solid var(--primary-color); /* Viền màu xanh */
+    border-radius: 5px; 
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+}
+
+.custom-checkbox:checked {
+    background-color: #007bff; /* Màu nền khi được chọn */
+    border-color: #0056b3; /* Viền đậm hơn */
+}
+
+/* Thêm dấu tick khi được chọn */
+.custom-checkbox:checked::before {
+    content: '✔';
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width:1024px){
+    .lblAll{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .sumlbl{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .boxSelection {
+        flex-direction: column; /* Chuyển thành cột */
+        justify-content: flex-start; /* Căn nội dung lên trên */
+        align-items: center; /* Căn giữa các phần tử */
+    }
+
+    .groupBox {
+        width: 100%; /* Đảm bảo chiếm toàn bộ chiều ngang */
+        max-width: 500px; /* Giới hạn chiều rộng nếu cần */
+    }
+    .btnCoun{
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid var(--dark-blue);
+    }
+    .headerTitle{
+        font-size: 36px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .headerTitle{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .lblAll{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .sumlbl{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .btnCoun{
+        margin-left: 5px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 5px;
+        border: 1px solid var(--dark-blue);
+    }
+    .chooseBox{
+        padding: 20px 20px;
+        left: 0;
+    }
+    .db{
+        display: block;
+    }
+    .namePro{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .textSame{
+        font-size: 9px;
+        font-weight: 400;
+    }
+}

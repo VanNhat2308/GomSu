@@ -1,0 +1,107 @@
+.namePage{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: none;
+}
+.wrapItem img{
+    width: 100%;
+    height: auto;
+}
+.hidden{
+    display: none;
+}
+.group-item-box {
+    display: grid;
+    gap: 10px; /* Khoảng cách giữa các ô */
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+button, .dots {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+button.active {
+    background: var(--primary-color);
+    color: #0b1a2b;
+}
+
+button:hover {
+    background: var(--primary-color);
+    color: #0b1a2b;
+}
+
+.dots {
+    color: white;
+    width: auto;
+    border: none;
+    cursor: default;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.prev,.next{
+    border: none;
+}
+
+/* ✅ Màn hình lớn (> 1024px): 4 cột, 3 hàng */
+@media (min-width: 1025px) {
+    .group-item-box {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+/* ✅ Màn hình trung bình (769px - 1024px): 3 cột, 3 hàng */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .group-item-box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+/* ✅ Màn hình nhỏ (< 768px): 2 cột, 4 hàng */
+@media (max-width: 768px) {
+    .namePage{
+        display: block;
+    }
+    .pagination{
+        justify-content: center;
+    }
+    .group-item-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    .namePro{
+        margin-top: 30px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .pricePro{
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
+
+/* 💡 Tạo style cho từng item */
+.item {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+}

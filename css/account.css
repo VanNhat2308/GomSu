@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'UTM Davida';
+    src: url('../fonts/UTM-Davida.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.accInfo{
+    display: none;
+}
+.bankLink{
+    display: none;
+}
+.orderCT{
+    width: 55% !important;
+    padding: 0 !important;
+}
+.boxHead .custom-select{
+    width: 100%;
+    margin-right: 0;
+}
+.boxHead .custom-select .select-box{
+    width: 100%;
+   align-items: start;
+}
+.boxHead .custom-select .select-box .groupSelect{
+    width: 100%;
+    justify-content: space-between;
+}
+.boxHead .custom-select .select-box .option{
+    padding-left: 0;
+    text-align: start;
+}
+.boxGroup{
+display: flex;
+justify-content: space-between;
+}
+.blockOption.b2{
+    width: 70%;
+}
+.container-fluid {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.orderCode{
+    margin-left: -40px;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.orderStatus{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+.orderStatus .Status li{
+    margin-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+}
+.orderStatus .Status .bulletCustom{
+     border-radius: 50%;
+    background: var(--dark-red); /* Màu */
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px; /* Căn chỉnh marker vào giữa viền */
+}
+
+
+.Status{
+    list-style: none; /* Ẩn bullet mặc định */
+    margin-top: 50px;
+    list-style: none;
+    border-left: 1px solid var(--primary-color);
+    padding: 0;
+}
+.StatusDetails .action{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.StatusDetails .time{
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.wrapContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MenuAcc */
+.MenuAcc {
+    width: 40%;
+    padding: 20px;
+    text-align: left;
+}
+
+.MenuAcc h1 {
+    font-size: 65px;
+    font-weight: 900;
+    color: white;
+}
+
+.MenuAcc h2 {
+    font-weight: 900;
+    color: white;
+    font-size: 48px;
+}
+
+.MenuAcc .listNav {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.MenuAcc .listNav li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+}
+.MenuAcc .listNav li{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.MenuAcc .listNav li a.active {
+    color: lightgreen;
+}
+
+/* Nội dung chính */
+.content {
+    width: 55%;
+    padding: 40px;
+}
+
+.content h2 {
+    font-size: 55px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Nhóm form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid var(--primary-color);
+    background-color: inherit;
+    color: rgb(117, 117, 117);
+    border-radius: 15px;
+    outline: none;
+}
+.form-group select option{
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border-left: 3px solid var(--primary-color) !important;
+    border-right: 3px solid var(--primary-color);
+}
+.form-group select:focus{
+    border-bottom: none;
+}
+
+/* Ngày sinh */
+.dob {
+    display: flex;
+    align-items: start;
+}
+
+.dob select {
+    flex: 1;
+}
+
+/* Nút */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.cancel {
+    background-color: inherit;
+    color: white;
+    border: 3px solid var(--primary-color);
+}
+
+.save {
+    background-color: inherit;
+    border: 3px solid var(--primary-color);
+    color: white;
+}
+/* Tùy chỉnh dropdown */
+.custom-select {
+    margin-right: 30px;
+    position: relative;
+    width: 100px;
+    user-select: none;
+}
+
+
+/* Hộp chọn */
+.select-box {
+    background-color: inherit;
+    color: rgb(117, 117, 117);
+    border: 3px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.groupSelect{
+    display: flex;
+    align-items: center;
+}
+/* Mũi tên dropdown */
+.arrow {
+    margin-left: 10px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Danh sách tùy chọn - Ẩn ban đầu */
+.options {
+    display: none;
+    background-color: inherit;
+    border-radius: 12px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiển thị danh sách khi mở */
+.select-box.open .options {
+    display: block;
+}
+
+/* Căn chỉnh option */
+.option {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.option:hover {
+    background-color: #13273D;
+}
+
+/* Xoay mũi tên khi mở */
+.select-box.open .arrow {
+    transform: rotate(180deg);
+}
+.group-input{
+    position: relative;
+}
+/* Container chứa icon */
+.group-input a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+/* Căn icon sát phải */
+.group-input .pen {
+    right: 40px; /* Icon đầu tiên */
+}
+
+.group-input .mail {
+    right: 10px; /* Icon thứ hai */
+}
+
+/* Hover effect */
+.group-input a:hover {
+    color: #FFD700;
+}
+.inone{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    #inone{
+        font-size: 15px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .wrapContent{
+        flex-direction: column;
+        align-items: start;
+
+    }
+    .MenuAcc{
+        width: 100%;
+        padding: 0;
+        margin: 40px 0;
+    }
+    .MenuAcc h1{
+        font-size: 60px;
+    }
+    .MenuAcc h2{
+        font-size: 44px;
+    }
+    .wrapUl{
+     display: flex;
+     justify-content: center;
+    }
+    .listNav{
+        width: 50%;
+        border: 1px solid white;
+        padding: 20px !important;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: none;
+    }
+    .listNav li{
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+    .orderCT{
+        width: 100% !important;
+
+    }
+    .orderCode{
+        margin-left: 0;
+    }
+    .content h2{
+        font-size: 36px;
+    }
+    .content label{
+        font-size: 18px;
+    }
+    .buttons{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width:768px){
+    .orderStatus{
+        flex-direction: column;
+        align-items: center;
+    }
+    .orderCode{
+        font-size: 24px;
+    }
+    .StatusDetails .action{
+        font-size: 18px;
+    }
+    .StatusDetails .time{
+        font-size: 14px;
+    }
+    .Status{
+        margin-left: 50px;
+    }
+
+    .MenuAcc h1{
+        font-size: 48px;
+    }
+    .MenuAcc h2{
+        font-size: 35px;
+    }
+    .listNav{
+        width: 70%;
+    }
+    .listNav a{
+        font-size: 14px !important;
+    }
+    .content h2{
+        font-size: 24px;
+    }
+    .content label{
+        font-size: 14px;
+    }
+    .custom-select{
+        margin-top: 5px;
+        margin-right: 5px;
+        padding: 0px;
+    }
+    .selected,.option{
+        font-size: 14px;
+    }
+    .dob{
+        flex-wrap: wrap;
+    }
+
+    .btnGrLink button{
+        padding: 10px;
+    }
+    .MenuAcc{
+        text-align: center;
+    }
+}

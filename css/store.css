@@ -1,0 +1,159 @@
+@import "all.css";
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px !important;
+}
+.namePage{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: none;
+}
+.swiper-slide {
+    background: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--primary-color) !important;
+}
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid var(--primary-color); 
+    background: inherit; 
+}
+.swiper-pagination-bullet-active {
+    background: var(--primary-color) !important; 
+}
+.swiper-button-next, 
+.swiper-button-prev {
+    top: 40%; /* Đẩy nút lên trên */
+}
+/*  */
+.title{
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin: 70px 0;
+}
+.wrapItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.namePro{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.pricePro{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.filter{
+    padding: 20px;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    font-size: 24px;
+
+height: 540px;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
+background: rgba(255, 255, 255, 0.1); /* Màu tối có độ trong suốt */
+backdrop-filter: blur(20px); /* Làm mờ nền phía sau */
+border: 0.75px solid #FFFFFF
+}
+.filter ul li a{
+    color: white;
+    text-decoration: none;
+}
+.filter ul{
+    margin-bottom: 50px;
+}
+.hidden{
+    display: none;
+}
+#plus{
+    display: none;
+}
+.rotate{
+    transform: rotate(45deg);
+}
+@media (min-width:769px) and (max-width: 1024px){
+    .filter{
+        display: none;
+
+    }
+}
+@media screen and (max-width:768px) {
+    .title{
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 80px;
+
+    }
+
+  #plus{
+    font-size: 40px;
+    display: block;
+    margin-right: 20px;
+    color: var(--primary-color);
+  }
+  .bi-list{
+    display: none;
+  }
+  .filter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+    height: auto;
+    top: 7%;
+}
+.namePro{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.pricePro{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.namePro.last{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.pricePro.last{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.namePage{
+    display: block;
+}
+.title{
+    font-size: 16px;
+    font-weight: 400;
+}
+.title.last{
+    margin-bottom: 0px;
+}
+}

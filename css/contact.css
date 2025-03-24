@@ -1,0 +1,78 @@
+@import "all.css";
+.listIcon{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.listIcon li{
+    list-style: none;
+    margin-right: 20px;
+}
+.listIcon li a{
+    text-decoration: none;
+}
+p:not(:last-child){
+    font-size: 30px;
+    color:white;
+    margin-bottom: 10px !important;
+}
+.group-input{
+    width: 100%;
+    position: relative;
+}
+.group-input input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    background: inherit;
+    border: 3px solid var(--primary-color);
+}
+.group-input button{
+    background: inherit;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+.map{
+    width: 100%;
+    height: auto;
+}
+.title{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    .colc1{
+        order: 1;
+    }
+    p:not(:last-child){
+        text-align: center;
+        font-size: 14px;
+    }
+    .listIcon{
+        justify-content: center;
+    }
+    .mg{
+        margin-bottom: 100px;
+    }
+    .title{
+        display: block;
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--primary-color) !important;
+    }
+}
+@media screen and (max-width:769px) {
+    p:not(:last-child){
+        text-align: start;
+    }
+    .mg{
+        margin-bottom: 50px;
+    }
+    .listIcon{
+        justify-content: start;
+    }
+}

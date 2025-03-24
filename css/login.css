@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'UTM Davida';
+    src: url('../fonts/UTM-Davida.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapClassest{
+    padding-bottom: 30px !important;
+}
+.wrapCt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapImg img{
+width: 90%;
+height:auto;
+border-radius: 212px;
+}
+
+.title{
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.groupInput{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.groupInput i{
+    position: absolute;
+    font-size: 43px;
+    right: 10px;
+   top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+
+
+}
+.groupInput input{
+    background: inherit;
+    padding: 10px;
+    width: 100%;
+  
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    outline: none;
+}
+.inone{
+    display: none;
+}
+.groupOption{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.groupOption a{
+    text-decoration: none;
+    color: white;
+}
+.group-check{
+width: 100%;
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+.group-check input{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    appearance: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.group-check span{
+    font-size: 18px;
+    color: white;
+}
+input[type="checkbox"]:checked::after {
+    content: '✔'; 
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.or{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0;
+    color: white;
+}
+.groupIcon{
+    display: flex;
+    align-items: center;
+}
+.groupIcon a img{
+    width: 53px;
+    height: 53px;
+}
+.groupIcon a{
+    display: inline-block; 
+    height: auto;
+    padding: 0 20px;
+}
+.groupIcon a:first-child{
+    border-right: 2px solid var(--primary-color);
+}
+.loginBtn{
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+.groupInput.last{
+    margin-bottom: 0;
+}
+.group-check.re{
+    justify-content: center;
+}
+@media screen and (max-width: 1024px){
+    .loginBtn{
+        margin-top: 10px;
+    }
+    input[type="checkbox"]{
+        width: 30px;
+        height: 30px;
+    }
+    .groupIcon a img{
+        width: 20px;
+        height: 20px;
+    }
+    .groupInput{
+        margin: 10px 0;
+    }
+    .title{
+        font-size: 36px;
+        margin-bottom: 5px;
+    }
+    .or{
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .wrapCol1{
+        display: none;
+    }
+    .container{
+        height: 100% !important;
+    }
+    .row{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+  
+    }
+    .wrapCt{
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapLogin{
+        height: 100%;
+    }
+    .wrapClassest{
+        height: 100vh;
+        padding-bottom: 0;
+
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    
+    /* .group-check.re{
+        justify-content:start;
+    } */
+.title{
+    font-size: 36px;
+}
+.groupOption a{
+    font-size: 14px;
+
+}
+.or{
+    font-size: 20px;
+}
+.loginBtn{
+    font-size: 18px;
+}
+
+.group-check.re span{
+    font-size: 14px;
+}
+}

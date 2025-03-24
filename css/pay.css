@@ -1,0 +1,137 @@
+.specialEdition{
+    width: 100%;
+}
+.specialEdition .groupBox{
+    width: 100%;
+
+}
+.sumLbl{
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-color);
+    padding-bottom: 40px;
+}
+.wrapBoxChoose{
+    width: 50%;
+}
+.boxBigger{
+    display: flex;
+}
+.boxAddress{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.addLbl{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.boxAddress .addressInput{
+    border: 3px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--dark-blue);
+    outline: none;
+    margin-bottom: 40px;
+
+}
+.methodLbl{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+.groupInput{
+    display: flex;
+    align-items: center;
+}
+.groupInput span{
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.custom-checkbox{
+    background: var(--dark-blue);
+}
+.choose{
+    width: 30px;
+    height: 30px;
+}
+.groupBag{
+    margin-bottom: 20px
+}
+.groupBag a{
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    margin-left: 15px;
+
+}
+.boxBag{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.groupBag{
+    margin-left: -8px;
+}
+.groupBag img{
+    width: 40px;
+    height: 40px;
+}
+.back{
+    margin-left: 13px !important;
+}
+@media screen and (max-width:1024px){
+    .boxBigger{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wrapBoxChoose{
+        width: 100%;
+    }
+    .boxAddress{
+        margin-left: 0px;
+    }
+    .sumLbl{
+        display: none;
+    }
+    .addLbl{
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .methodLbl{
+        font-size: 18px;
+    }
+    .groupInput span{
+        font-size: 14px;
+    }
+    .groupBag a{
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        border: 1px solid var(--primary-color);
+    }
+    .boxBag{
+        margin-bottom: 10px;
+    }
+    .groupBag{
+        align-items: center;
+    }
+    .boxAddress .addressInput{
+        border: 1px solid var(--primary-color);
+    }
+
+
+}

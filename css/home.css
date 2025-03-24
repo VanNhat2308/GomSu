@@ -1,0 +1,368 @@
+@import "all.css";
+@font-face {
+    font-family: 'UTM Davida';
+    src: url('../fonts/UTM-Davida.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.carouImg{
+    width: 340px;
+    height: 635px;
+}
+.carousel-item-title{
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+.caption{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    line-height: 2;
+}
+.moreBtn, .productBtn{
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 15px;
+    background: inherit;
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 40px;
+}
+.namePage{
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+}
+.boxBtn{
+    justify-content: center;
+}.container-fluid{
+    overflow-x: hidden;
+    padding: 0px !important;
+}
+.contentS2{
+    padding: 80px 0;
+    background: var(--dark-red);
+}
+.imgContain{
+    padding: 0 !important;
+}
+.wrapImg{
+    width: 90%;
+}
+.wrapImg img{
+width: 100%;
+height: auto;
+}
+.imgContain{
+    display: flex;
+    justify-content: end;
+}
+.contentContain{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.contentContain .caption{
+    text-align: right;
+    width: 70% !important;
+    margin-bottom: 50px !important;
+}
+.contentContain .carousel-item-title{
+    margin-bottom: 30px;
+}
+.wrapContent{
+    display: flex;
+    align-items: center;
+}
+.contentS2.reverse .imgContain{
+justify-content: start;
+}
+.contentS2.reverse .imgContain .wrapImg{
+    width: 100%;
+}
+.contentS2.reverse .imgContain .wrapImg img{
+    height: 100%;
+}
+.contentS2.reverse .contentContain{
+    width: 90%;
+    align-items: start;
+    padding-right: 0px !important;
+}
+.contentS2.reverse .wrapContent{
+    justify-content: end;
+}
+.contentS2.reverse .wrapContent .caption{
+    text-align: left;
+}
+.charac{
+    background: var(--secondary-green);
+    padding: 0;
+}
+.charac img{
+    object-fit: cover;
+    height: 654px !important;
+}
+.imgProduct{
+    background: var(--dark-blue);
+}
+.imgProduct .carousel-control-prev {
+    left: 0 !important;
+}
+.imgProduct .carousel-control-next {
+    right: 0 !important;
+}
+.imgProduct .namePage{
+    font-size: 48px;
+    font-weight: 400;
+    display: block;
+    padding: 60px 0;
+}
+.arrow-up{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: inherit;
+    position: absolute;
+    bottom: -100px;
+    left: -50px;
+}
+
+.content-hidden{
+    display: none !important;
+}
+
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px !important;
+}
+
+.swiper-slide {
+    background: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: var(--primary-color) !important;
+}
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid var(--primary-color); 
+    background: inherit; 
+}
+.swiper-pagination-bullet-active {
+    background: var(--primary-color) !important; 
+}
+/*  */
+
+/* responsive */
+@media screen and (max-width:768px){
+    .wrap_last{
+        align-items: center !important;
+    }
+    .wrap_last .carousel-item-title{
+        margin-bottom: 10px !important;
+    }
+    .wrap_last .caption{
+        margin-top: 0px !important;
+    }
+    .contentContain .carousel-item-title {
+        margin: 30px 0;
+        font-size: 36px;
+        text-align: center !important;
+    }
+    .contentContain .caption:first{
+        text-align: center !important;
+    }
+    .contentContain .caption {
+        width: 100% !important;
+        margin-top: 30px;
+        margin-bottom: 30px !important;
+        
+    }
+    .contentS2.reverse .imgContain {
+        justify-content: center;
+    }
+    .contentS2.reverse .imgContain .wrapImg {
+        width: 80%;
+    }
+    .c1{
+        order: 2;
+    
+    }
+    .c2{
+        justify-content: center;
+    }
+    .contentContain{
+      align-items: center;
+    }
+    .carouImg{
+        margin-left: 100px;
+        width: 240px;
+        height: 335px;
+    }
+    .caption{
+        font-size: 11px;
+    }
+    .moreBtn, .productBtn{
+        font-size: 14px;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 15px 5px !important;
+    }
+
+    .contentCaption{
+        width: 230px !important;
+    }
+  
+    .namePage{
+        display: block;
+    }
+    .wrapImg{
+        width: 80%;
+    }
+    .contentS2.reverse .wrapContent {
+        justify-content: center;
+    }
+    .contentS2.reverse .contentContain {
+        width: 83%;
+    }
+    .contentS2.reverse .wrapContent .caption {
+        margin-top: 30px;
+        width: 100% !important;
+    }
+    .imgLast{
+        order: -1;
+    }
+    .imgContain{
+        justify-content: center;
+    }
+    .contentLast{
+        width: 83%;
+    }
+    .wrapContent{
+        justify-content: center;
+    }
+    .captionLast{
+      text-align: left !important;
+    }
+ .contentContain  .contentFirst{
+        width: 83% !important;
+        text-align: center !important;
+        margin-top: 0px !important;
+        margin-bottom: 30px !important;
+    }
+  .arrow-up{
+    bottom: -65px;
+    left: 40%;
+    transform: translateX(50%);
+  }
+  .contentS2{
+    padding: 30px 0;
+  }
+  .arrow-up img{
+    width: 45px;
+  }
+  .charac img {
+    height: 500px !important;
+    
+}
+
+
+
+@media (min-width:769px) and (max-width:1024px){
+    .boxBtn{
+        justify-content: start !important;
+    }
+    .moreBtn, .productBtn{
+        font-size: 14px;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        padding: 15px 5px !important;
+    }
+  
+    .namePage{
+        font-size: 24px;
+        display: block;
+        margin: 35px 0;
+    }
+    .imgProduct .namePage{
+        margin-top: 0px !important;
+    }
+ 
+
+
+    .carousel-item-title{
+        text-align: start;
+        margin: 40px 0 !important;
+        font-size: 36px;
+    }
+    .caption{
+        text-align: start;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .mainLogo{
+        width: 42px;
+        height: 49px;
+    }
+    .contentContain .carousel-item-title{
+    font-size: 36px;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+
+    }
+    
+.contentContain .caption{
+    margin-bottom: 10px !important;
+    font-size: 12px;
+    width: 100%;
+}
+.wrapImg{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.wrapImg img{
+    object-fit: cover;
+    height: 100%;
+}
+.imgContain{
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+}
+.wrapContent{
+    display: flex;
+    align-items: center;
+
+}
+.arrow-up{
+    display: none;
+}
+}
+@media screen and (max-width:991px) {
+.np-01{
+    display: none;
+}
+.col-lg-3 {
+    width: 33.33%; /* Mỗi cột chiếm 1/3 để đảm bảo hàng đủ 3 cột */
+}
+    
+}}
