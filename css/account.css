@@ -6,9 +6,12 @@
 }
 
 .accInfo{
-    display: none;
+    display: block;
 }
 .bankLink{
+    display: none;
+}
+.orderCT{
     display: none;
 }
 .orderCT{
@@ -317,7 +320,7 @@ button {
 .group-input a:hover {
     color: #FFD700;
 }
-.inone{
+#inone{
     display: none;
 }
 @media screen and (max-width:1024px) {

@@ -54,20 +54,20 @@
                 <!-- Icon bên phải -->
                 <ul class="navbar-nav ms-auto iconGroup">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="img/user.png" alt="User" height="60"></a>
+                        <a class="nav-link" href="Account.html"><img src="img/user.png" alt="User" height="60"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="img/cart.png" alt="Cart" height="60"></a>
+                        <a class="nav-link" href="order.html"><img src="img/cart.png" alt="Cart" height="60"></a>
                     </li>
                 </ul>
             </header>
             <h1 class="namePage">CỬA HÀNG</h1>
             <div class="navigationPane">
-                <a href="">Cửa hàng</a>
+                <a href="store.html">Cửa hàng</a>
                 <i class="bi bi-chevron-right"></i>
-                <a href="">Bộ trà / Cafe</a>
+                <a href="categories.html">Bộ trà / Cafe</a>
                 <i class="bi bi-chevron-right"></i>
-                <a href="">Tên sản phẩm</a>
+                <a href="ProductDetails.html">Tên sản phẩm</a>
             </div>
             <div class="group-box-details">
                 <div class="boxImg">
@@ -93,13 +93,13 @@
                         <span class="price">3.730.000 VNĐ</span>
                         <div class="group-selection">
                             <span>Số lượng: <div class="groupVolume">
-                                <div class="bt">
+                                <div class="bt" id="plusQuan">
                                     <i class="bi bi-plus-lg"></i>
                                 </div>
-                                <div class="number">
+                                <div class="number" id="quantity">
                                     1
                                 </div>
-                                <div class="bt">
+                                <div class="bt" id="minusQuan">
                                     <i class="bi bi-dash"></i>
                                 </div>
                             </div> </span>
@@ -156,6 +156,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item1-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ TRÀ - HŨ TRÀ AN NHIÊN</h3>
                                 <h3 class="pricePro last">1.799.000 VNĐ</h3>
@@ -163,6 +164,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item2-List2-product.png" alt="">
                             <h3 class="namePro last">BÌNH HOA 26CM - SẮC HOA</h3>
                                 <h3 class="pricePro last">3.498.000 VNĐ</h3>
@@ -170,6 +172,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item3-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                                 THIÊN TUẾ XANH KHẮC NỔI</h3>
@@ -178,6 +181,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item4-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ CÀ PHÊ PHIN - CAMELLIA
                                 MÀU CÀ PHÊ</h3>
@@ -186,6 +190,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item1-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                                 MẪU ĐƠN VÀNG</h3>
@@ -194,6 +199,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item2-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ TRÀ 0.7L - JASMINE
                                 QUẢ ĐẦU MÙA</h3>
@@ -202,6 +208,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item3-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                                 THIÊN TUẾ XANH KHẮC NỔI</h3>
@@ -210,6 +217,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrapItem">
+                               <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                             <img src="img/item4-List2-product.png" alt="">
                             <h3 class="namePro last">BỘ CÀ PHÊ PHIN - CAMELLIA
                                 MÀU CÀ PHÊ</h3>
@@ -229,6 +237,7 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item2-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ TRÀ - HŨ TRÀ AN NHIÊN</h3>
                     <h3 class="pricePro last">1.799.000 VNĐ</h3>
@@ -236,6 +245,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item1-List1-product.png" alt="">
                 <h3 class="namePro last">BÌNH HOA 26CM - SẮC HOA</h3>
                     <h3 class="pricePro last">3.498.000 VNĐ</h3>
@@ -243,6 +253,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item4-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                     THIÊN TUẾ XANH KHẮC NỔI</h3>
@@ -251,6 +262,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item4-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ PHIN - CAMELLIA
                     MÀU CÀ PHÊ</h3>
@@ -259,6 +271,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item2-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                     MẪU ĐƠN VÀNG</h3>
@@ -267,6 +280,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item2-List1-product.png" alt="">
                 <h3 class="namePro last">BỘ TRÀ 0.7L - JASMINE
                     QUẢ ĐẦU MÙA</h3>
@@ -275,6 +289,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item1-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                     THIÊN TUẾ XANH KHẮC NỔI</h3>
@@ -283,6 +298,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item4-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ PHIN - CAMELLIA
                     MÀU CÀ PHÊ</h3>
@@ -301,6 +317,7 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item2-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ TRÀ - HŨ TRÀ AN NHIÊN</h3>
                     <h3 class="pricePro last">1.799.000 VNĐ</h3>
@@ -308,6 +325,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item3-List2-product.png" alt="">
                 <h3 class="namePro last">BÌNH HOA 26CM - SẮC HOA</h3>
                     <h3 class="pricePro last">3.498.000 VNĐ</h3>
@@ -315,6 +333,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item1-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                     THIÊN TUẾ XANH KHẮC NỔI</h3>
@@ -323,6 +342,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item4-List1-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ PHIN - CAMELLIA
                     MÀU CÀ PHÊ</h3>
@@ -331,6 +351,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item1-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                     MẪU ĐƠN VÀNG</h3>
@@ -339,6 +360,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item2-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ TRÀ 0.7L - JASMINE
                     QUẢ ĐẦU MÙA</h3>
@@ -347,6 +369,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item3-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ 0.8L - SAGO
                     THIÊN TUẾ XANH KHẮC NỔI</h3>
@@ -355,6 +378,7 @@
         </div>
         <div class="swiper-slide">
             <div class="wrapItem">
+                   <div class="blockHover"><a href="ProductDetails.html"><i class="bi bi-search"></i></a></div>
                 <img src="img/item4-List2-product.png" alt="">
                 <h3 class="namePro last">BỘ CÀ PHÊ PHIN - CAMELLIA
                     MÀU CÀ PHÊ</h3>
