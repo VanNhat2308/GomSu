@@ -23,9 +23,8 @@
     padding-bottom: 100px !important;
 }
 .swiper-button-prev, .swiper-button-next {
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100 !important;
+    top: 45% !important;
+    transform: translateY(-50%) !important;
   }
   .swiper-button-prev{
     left: -2px !important;
@@ -265,6 +264,9 @@ span{
     margin-top: 50px !important;
 }
 @media screen and (max-width:1024px){
+    .wrapBoxContent{
+        display: none;
+    }
     .boxNews img{
         height: auto;
     }
