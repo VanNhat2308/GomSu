@@ -1,4 +1,4 @@
-let menuBtn = document.getElementsByClassName("menu-bar")[0]
+let menuBtn = document.getElementsByClassName("menu-button")[0]
 menuBtn.addEventListener('click',(e)=>{
     let sidebar = document.getElementsByClassName("side-bar")[0];
     sidebar.classList.toggle("hidden");

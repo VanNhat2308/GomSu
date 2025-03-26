@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -25,16 +24,35 @@ body{
     width: 100%;
     background: var(--dark-blue);
 }
-.navbar-nav li a{
+.menu-list{
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.menu-list li a{
+    text-decoration: none;
     font-size: 24px ;
     color: var(--primary-color) !important;
 }
-
-header .navbar-nav:first-child li:not(:last-child){
+header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .menu-list li:not(:last-child){
     margin-right: 30px;
 }
+.icon-container a:last-child{
+    margin-left: 20px;
+}
+.icon-container a img{
+    width: 45px;
+    height: 45px;
+}
 /* navbar */
-.menu-bar{
+.menu-button{
     display: none;
     background: inherit;
     border: none;
@@ -42,11 +60,11 @@ header .navbar-nav:first-child li:not(:last-child){
 .side-bar{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
     z-index: 3;
     height: 100%;
     background: #000;
-   width: 40%;
+    width: 50%;
 }
 .side-bar ul{
     padding-left: 0;
@@ -55,11 +73,12 @@ header .navbar-nav:first-child li:not(:last-child){
     list-style: none;
 }
 .side-bar ul li{
+    padding: 10px 0;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .side-bar ul li:hover{
-    background: #ccc;
+    background: var(--secondary-green);
 }
 .side-bar.hidden{
     display: none;
@@ -101,40 +120,35 @@ footer p{
 
 /* navbar responsive */
 @media (min-width:769px) and (max-width:1024px){
-    .navbar-nav{
+    .menu-list{
         display: flex !important;
     }
-    .navbar-nav li a{
+    .menu-list li a{
         font-size: 14px ;
         
     }
-    header .navbar-nav:last-child{
+    header .menu-list:last-child{
         display: none;
     }
    
 }
 
 @media screen and (max-width:768px){
-    .menu-bar{
+    .menu-button{
         display: block;
     }
-}
-@media screen and (max-width:576px)  {
-
-}
-@media screen and (max-width:768px) {
-    .iconGroup{
+    .icon-container{
         display: none !important;
     }
-    .mainLogo{
-        width: 42px;
-        height: 49px;
+    .menu-list{
+        display: none;
     }
 }
+
 @media screen and (max-width:1024px) {
-    .iconGroup li a img {
-        width: 36px;
-        height: 38px;
+    .logo img{
+        width: 52px;
+        height: 60px;
     }
  
     footer{
