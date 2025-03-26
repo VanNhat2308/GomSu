@@ -1,12 +1,14 @@
+.groupContent.pageCT{
+    display: flex;
+    flex-direction: column;
+}
 .Box-item-news {
-    width: 90%;
+    width: 95%;
     height: auto;
-    background-color: red;
     border-radius: 59px;
     padding: 20px 40px;
     display: flex;
     background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(20px); 
     border: 0.75px solid #FFFFFF;
 }
 .wrapBoxNews{
@@ -14,12 +16,23 @@
     display: flex;
     justify-content: center;
 }
+
 .swiper {
     width: 100%;
-    height: 100%;
-    padding-bottom: 50px !important;
+    height: auto;
+    padding-bottom: 100px !important;
 }
-
+.swiper-button-prev, .swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100 !important;
+  }
+  .swiper-button-prev{
+    left: -2px !important;
+  }
+  .swiper-button-next{
+    right: -2px !important;
+  }
 
 .swiper-button-next, .swiper-button-prev{
     color: var(--primary-color) !important;
@@ -39,52 +52,71 @@
     position: relative;
     margin-right: 20px;
 }
+.box-lg-news::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+    border-radius: 24px;
+}
 
 .box-lg-news img {
     border-radius: 24px;
     width: 100%;
     height: 100%; /* Đảm bảo chiều cao đầy đủ */
     object-fit: cover; /* Giữ tỷ lệ ảnh mà không bị méo */
-    filter: brightness(70%);
 }
 
 .box-medium-news {
-    width: 45%;
+    width: 46%;
     display: flex;
-    gap: 20px;
+    gap: 15px;
 
 }
 .group-box-more{
-    width: 15%;
-    font-size: 16px;
+    flex: 1;
     margin-bottom: 10px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 10px;
+    margin-left: 10px;
 }
 .item{
     position: relative;
 }
-
+.item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+    border-radius: 30px;
+}
 .box-medium-news .group-box {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .box-medium-news img {
     width: 100%;
-    height: 240px; /* Chiều cao cố định */
+    height: 200px; /* Chiều cao cố định */
     object-fit: cover; /* Giữ tỷ lệ ảnh */
     border-radius: 30px;
-    filter: brightness(60%);
 }
 
 .textBox {
     width: 90%;
     position: absolute;
+    z-index: 1;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -92,14 +124,14 @@
 
 .question {
     margin: 0;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 600;
     color: white;
 }
 
 .caption {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     color: white;
     margin: 20px 0;
 }
@@ -108,25 +140,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
     color: white;
+    margin-bottom: 10px;
 }
 .title-box{
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     color: white;
 }
 .timeNews{
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin: 0;
     color: white;
+    font-size: 11px;
+}
+.timeRelease{
+    color: white;
+    font-size: 11px;
 }
 .groupTextG2{
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 20px;
     position: absolute;
+    z-index: 1;
 }
 .title-box{
     margin-bottom: 10px;
@@ -136,7 +173,7 @@
     color: var(--primary-color);
 }
 .group-box-more h1{
-    font-size: 24px;
+    font-size: 18px;
     color: var(--primary-color);
     
 }
@@ -154,24 +191,29 @@
 }
 .boxNews img{
     width: 55%;
-    height: 100%;
+    height: auto;
     margin-right: 10px;
     object-fit: cover;
 }
 .groupContent{
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: space-between;
 }
 .newHeader{
-    font-size: 24px;
+    color: white;
+    font-size: 20px;
     font-weight: 700;
+    margin-bottom: 5px;
+}
+span{
+    display: inline-block;
 }
 .captionCenter{
-    margin: 10px 0;
-    font-size: 16px;
+    margin-bottom: 5px;
+    font-size: 14px;
     font-weight: 500;
+    color: white;
 }
 .boxCenter{
     margin: 50px 0 !important;
@@ -219,7 +261,16 @@
 .pagination .prev,.pagination .next{
     border: none;
 }
+.boxHeader{
+    margin-top: 50px !important;
+}
 @media screen and (max-width:1024px){
+    .boxNews img{
+        height: auto;
+    }
+    .box-medium-news .group-box{
+        width: 100%;
+    }
     .boxHeader{
         margin-top: 150px !important;
     }
@@ -238,11 +289,10 @@
         justify-content: center;
     }
     .newHeader{
-        font-size: 16px;
+        font-size: 17px;
     }
     .captionCenter{
-        margin: 10px 0;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 400;
     }
     .timeRelease{
@@ -265,7 +315,6 @@
         width: 30%;
     }
     .group-box-more{
-        width: 20%;
         margin-left: 20px;
     }
     .question{
@@ -273,18 +322,28 @@
         font-weight: 600;
     }
     .caption,.timeNews{
-        font-size: 11px;
+        font-size: 10px;
         font-weight: 500;
     }
     .caption{
         margin: 10px 0;
     }
+    .item::before{
+        border-radius: 10px;
+    }
+    .box-lg-news::before{
+        border-radius: 10px;
+
+    }
     .box-medium-news img{
         height: 139px;
         border-radius: 10px;
     }
+    .group-box-more a{
+        width: 100%;
+    }
     .group-box-more h1{
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 400;        
     }
     .groupTextG2 .title-box{
@@ -298,6 +357,12 @@
       top: 50%;
       transform: translateY(-50%);
     }
+    .swiper-button-prev{
+        left: 0px !important;
+      }
+      .swiper-button-next{
+        right: 0px !important;
+      }
 
 
 }

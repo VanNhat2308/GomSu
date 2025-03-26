@@ -138,10 +138,10 @@ input[type="checkbox"]:checked::after {
         width: 30px;
         height: 30px;
     }
-    .groupIcon a img{
+    /* .groupIcon a img{
         width: 20px;
         height: 20px;
-    }
+    } */
     .groupInput{
         margin: 10px 0;
     }
