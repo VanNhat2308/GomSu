@@ -334,4 +334,21 @@ width: 45%;
     display: block;
     margin-bottom: 20px;
 }
+.rating span{
+    margin-right: 10px;
+}
+.rating i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.group-icon img{
+    width: 30px;
+    height: 30px;
+}
+.number{
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
 }

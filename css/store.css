@@ -148,7 +148,8 @@ border: 0.75px solid #FFFFFF
     padding-left: 20px;
     padding-right: 5px;
     height: auto;
-    top: 7%;
+    top: 13%;
+    z-index: 3;
 }
 .namePro{
     margin-top: 30px;

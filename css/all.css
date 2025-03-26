@@ -150,9 +150,24 @@ footer p{
         width: 52px;
         height: 60px;
     }
- 
+    footer .mainLogo{
+        width: 40px;
+        height: 45px;
+    }
+    footer ul li a{
+        font-size: 12px;
+    }
+     .listIcon li a img{
+        width: 25px;
+        height: 25px;
+     }
     footer{
         background: var(--dark-blue);
     }
-    
+    footer p{
+        font-size: 8px;
+    }
+    footer ul li:not(:last-child) {
+        margin-right: 20px;
+    }
 }

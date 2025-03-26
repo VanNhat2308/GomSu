@@ -209,7 +209,7 @@ justify-content: space-between;
     justify-content: end;
 }
 
-button {
+.cancel,.save{
     padding: 10px 30px;
     border: none;
     cursor: pointer;
@@ -323,6 +323,9 @@ button {
 #inone{
     display: none;
 }
+.orderST-item:first-child{
+    margin-right: 30px !important;
+}
 @media screen and (max-width:1024px) {
     #inone{
         font-size: 15px;
@@ -435,5 +438,14 @@ button {
     }
     .MenuAcc{
         text-align: center;
+    }
+    .select-box, .group-input input, .form-group input{
+        border: 1px solid var(--primary-color);
+    }
+    .cancel,.save{
+        border: 1px solid var(--primary-color);
+    }
+  #monthYear::placeholder{
+        font-size: 9px;
     }
 }

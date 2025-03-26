@@ -62,7 +62,9 @@
     height: 30px;
 }
 .groupBag{
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 .groupBag a{
     display: inline-block;
@@ -79,8 +81,6 @@
 
 }
 .boxBag{
-    display: flex;
-    align-items: center;
     margin-top: 40px;
 }
 .groupBag{
@@ -134,4 +134,10 @@
     }
 
 
+}
+@media screen and (max-width:400px) {
+    .groupBag a{
+        width: 100%;
+    }
+    
 }

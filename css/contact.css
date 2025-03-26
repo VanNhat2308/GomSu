@@ -66,6 +66,19 @@ p:not(:last-child){
     }
 }
 @media screen and (max-width:769px) {
+    .group-input input{
+        border: 1px solid var(--primary-color);
+    }
+    .group-input input::placeholder{
+        font-size: 12px;
+    }
+    .group-input button img{
+        width: 30px;
+        height: 30px;
+    }
+    .title{
+        font-size: 18px;
+    }
     p:not(:last-child){
         text-align: start;
     }

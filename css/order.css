@@ -8,8 +8,11 @@
     position: relative;
 }
 .chooseBox{
-    width: 100%;
-    position: absolute;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); 
     bottom: 0;
     background: var(--primary-color);
     display: flex;
@@ -17,6 +20,12 @@
     padding:30px 40px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    align-items: center;
+}
+.sum{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .groupIn{
     display: flex;
@@ -29,7 +38,7 @@
 }
 .gap{
     width: 100%;
-    height: 200px;
+    height: 150px;
 }
 .lblAll{
     font-size: 36px;
@@ -146,6 +155,9 @@ span{
     transform: translate(-50%, -50%);
 }
 @media screen and (max-width:1024px){
+    .chooseBox{
+        width: 80%;
+    }
     .lblAll{
         font-size: 18px;
         font-weight: 600;
@@ -178,6 +190,11 @@ span{
     
 }
 @media screen and (max-width:768px) {
+    .chooseBox{
+        width: 100%;
+        left: 0;
+        transform: unset;
+    }
     .headerTitle{
         font-size: 18px;
         font-weight: 400;
@@ -185,12 +202,13 @@ span{
         margin-bottom: 50px;
     }
     .lblAll{
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
     }
     .sumlbl{
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
+        margin-right: 10px;
     }
     .btnCoun{
         margin-left: 5px;
@@ -214,5 +232,18 @@ span{
     .textSame{
         font-size: 9px;
         font-weight: 400;
+    }
+}
+@media (min-width:1025px) and (max-width:1229px) {
+    .lblAll{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .sumlbl{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .btnCoun{
+        font-size: 13px;
     }
 }
