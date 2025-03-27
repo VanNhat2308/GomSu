@@ -62,7 +62,7 @@ button:hover {
     border: none;
 }
 
-/* ✅ Màn hình lớn (> 1024px): 4 cột, 3 hàng */
+
 @media (min-width: 1025px) {
     .group-item-box {
         grid-template-columns: repeat(4, 1fr);
@@ -70,7 +70,6 @@ button:hover {
     }
 }
 
-/* ✅ Màn hình trung bình (769px - 1024px): 3 cột, 3 hàng */
 @media (min-width: 769px) and (max-width: 1024px) {
     .group-item-box {
         grid-template-columns: repeat(3, 1fr);
@@ -78,7 +77,6 @@ button:hover {
     }
 }
 
-/* ✅ Màn hình nhỏ (< 768px): 2 cột, 4 hàng */
 @media (max-width: 768px) {
     .namePage{
         display: block;
