@@ -18,7 +18,7 @@
     position: relative;
     color: white;
     font-size: 13px;
-    line-height: 2;
+    margin-bottom: 0;
 }
 .moreBtn, .productBtn{
     text-decoration: none;
@@ -171,7 +171,19 @@ justify-content: start;
 /*  */
 
 /* responsive */
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
+    .contentS2.reverse{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .carousel-item-title{
+        font-size: 24px;
+    }
+    .productBtn{
+        font-size: 11px !important;
+        padding: 5px 10px !important;
+    }
+
     .wrap_last{
         align-items: center !important;
     }
@@ -192,11 +204,15 @@ justify-content: start;
     .contentContain .caption {
         width: 100% !important;
         margin-top: 30px;
-        margin-bottom: 30px !important;
+        margin-bottom: 20px !important;
         
     }
     .contentS2.reverse .imgContain {
+        padding-top: 25px !important;
         justify-content: center;
+    }
+    .lastBt{
+        margin-bottom: 25px;
     }
     .contentS2.reverse .imgContain .wrapImg {
         width: 80%;
@@ -212,18 +228,19 @@ justify-content: start;
       align-items: center;
     }
     .carouImg{
-        margin-left: 60px;
+        margin-left: 80px;
         width: 240px;
         height: 335px;
     }
     .caption{
         font-size: 11px;
+        text-align: left;
     }
     .moreBtn, .productBtn{
         font-size: 14px;
         border: 1px solid var(--primary-color);
         border-radius: 10px;
-        padding: 15px 5px !important;
+        padding: 8px !important;
     }
 
     .contentCaption{
@@ -269,23 +286,32 @@ justify-content: start;
     }
   .arrow-up{
     bottom: -65px;
-    left: 40%;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
   }
   .contentS2{
-    padding: 30px 0;
+    padding: 50px 0;
   }
   .arrow-up img{
     width: 45px;
   }
   .charac img {
-    height: 500px !important;
+    height: 400px !important;
     
+}
+.lastTi{
+    font-size: 48px !important;
+}
 }
 
 
-
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:768px) and (max-width:1024px){
+    .sectionCarou{
+        padding-bottom: 50px;
+    }
+    .wrapClassest{
+        min-height: unset !important;
+    }
     .boxBtn{
         justify-content: start !important;
     }
@@ -293,7 +319,7 @@ justify-content: start;
         font-size: 14px;
         border: 1px solid var(--primary-color);
         border-radius: 10px;
-        padding: 15px 5px !important;
+        padding: 10px 15px !important;
     }
   
     .namePage{
@@ -303,6 +329,9 @@ justify-content: start;
     }
     .imgProduct .namePage{
         margin-top: 0px !important;
+    }
+    .contentContain .caption{
+        width: 78% !important;
     }
  
 
@@ -331,13 +360,23 @@ justify-content: start;
     
 .contentContain .caption{
     margin-bottom: 10px !important;
-    font-size: 12px;
+    font-size: 11px;
     width: 100%;
 }
+.contentFirst{
+    font-size: 12px !important;
+}
 .wrapImg{
+    width: 95%;
     height: 100%;
     display: flex;
     align-items: center;
+}
+.contentS2.reverse .contentContain{
+    width: auto;
+}
+.contentS2.reverse .imgContain .wrapImg img{
+    width: 95%;
 }
 .wrapImg img{
     object-fit: cover;
@@ -356,6 +395,20 @@ justify-content: start;
 .arrow-up{
     display: none;
 }
+.contentS2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contentS2.reverse{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.lastTi{
+    font-size: 48px !important;
+}
+.charac img{
+    height: 400px !important;
+}
 }
 @media screen and (max-width:991px) {
 .np-01{
@@ -365,4 +418,4 @@ justify-content: start;
     width: 33.33%; /* Mỗi cột chiếm 1/3 để đảm bảo hàng đủ 3 cột */
 }
     
-}}
+}
