@@ -4,6 +4,9 @@
     color: var(--primary-color);
     display: none;
 }
+.wrapItem {
+    min-height: unset !important;
+}
 .wrapItem img{
     width: 100%;
     height: auto;
@@ -96,6 +99,7 @@ button:hover {
         font-weight: 700;
         font-size: 12px;
     }
+
 }
 
 /* 💡 Tạo style cho từng item */

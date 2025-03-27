@@ -11,7 +11,7 @@
     width: 80%;
     position: fixed;
     bottom: 0;
-    left: 50%; /* Căn giữa theo chiều ngang */
+    left: 50%; 
     transform: translateX(-50%); 
     bottom: 0;
     background: var(--primary-color);
